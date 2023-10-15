@@ -2,7 +2,6 @@ const loadVideos = async () => {
     const res = await fetch('https://openapi.programming-hero.com/api/videos/category/1000');
     const data = await res.json();
     const videos = data.data;
-    // console.log(videos);
     showVideos(videos);
 }
 
@@ -14,7 +13,6 @@ const showAllBtn = () => {
 const showVideos = videos => {
     const videoContainer = document.getElementById('video-container');
     videoContainer.textContent = "";
-    // videos = videos.slice(0, 6);
     videos.forEach(video => {
         const videoCard = document.createElement('div');
         videoCard.classList = `card card-compact shadow-xl mx-auto w-[320px]`;
@@ -48,8 +46,8 @@ const showBtn = buttons => {
     const btnGroup = document.getElementById('btn-group');
     btnGroup.innerHTML = `
     <div class="flex justify-center items-center gap-4">
-            <button onClick="showAllBtn()" id="show-all-btn" class="btn">${buttons[0].category}</button>
-            <button onClick="showContent()" id="btn-music" class="btn">${buttons[1].category}</button>
+            <button class="btn">${buttons[0].category}</button>
+            <button class="btn">${buttons[1].category}</button>
             <button class="btn">${buttons[2].category}</button>
             <button class="btn">${buttons[3].category}</button>
         </div>
