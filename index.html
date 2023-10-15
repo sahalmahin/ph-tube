@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>P. Hero Tube</title>
+
+</head>
+
+<body>
+    <!------------------------- Header ------------------------->
+
+    <header>
+        <div class="navbar bg-base-100 mt-6 pb-4 border-b-2 border-gray-300 ">
+            <div class="navbar-start">
+                <img class=" w-[120px] h-[30px]" src="./img/Logo.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="bg-gray-300 rounded-lg font-semibold"><a>Sort by view</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a onclick="blogBtn()" id="blog-btn" target="_blank" class="btn bg-red-500 text-white">Blog</a>
+            </div>
+        </div>
+        <!------------------------ Button group ----------------------->
+        <div id="btn-group" class=" mt-8 mb-10 gap-6 flex items-center justify-center font-semibold">
+            
+        </div>
+    </header>
+
+    <main>
+        <!---------------------------- Video Cards --------------------------->
+        <div id="video-container" class="grid grid-cols-4 gap-y-14 mb-32 max-sm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./ph.js"></script>
+</body>
+
+</html>
